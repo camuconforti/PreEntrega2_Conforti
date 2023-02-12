@@ -35,13 +35,13 @@ header {
 }
 
 .banner {
-  background-image: url(../images/banner_norhte_uno.png);
+  background-image: url(../assets/images/banner_norhte_uno.png);
   background-size: cover;
   background-position: center;
   height: 70vh;
 }
 .nosotras {
-  background-image: url(../images/nosotras.png);
+  background-image: url(../assets/images/nosotras.png);
   background-size: cover;
   background-position: center;
   height: 70vh;
@@ -105,10 +105,32 @@ a {
   --bs-btn-disabled-border-color: rgba(59, 5, 66, 0.65);
 }
 
+.border {
+  border: var(--bs-border-width) var(--bs-border-style) #896297!important;
+}
+
+legend {
+  clear: left;
+  border-block-color:var(--bs-btn-active-border-color);
+}
+
 footer {
 height: 10vh;
 }
 
+.bi-linkedin {
+color: #fff;
+}
+
+.bi-facebook {
+  color: #fff;
+}
+.bi-instagram {
+  color: #fff;
+}
+.bi-whatsapp { 
+  color: #00bb2d;
+}
 .bg-info {
   --bs-bg-opacity: 1;
   background-color: rgb(212, 193, 224)!important;
@@ -121,57 +143,129 @@ height: 10vh;
 
 @media (mid-width: 320px) {
 .nosotras {
-    background-image: url(../images/nosotras.png);
+    background-image: url(../assets/images/nosotras.png);
     background-size: cover;
     background-position: center;
-    height: 35vh;
+    height: 34vh;
+}
+.h3, h3 {
+  font-size: calc(1rem + .2vw);
 }
 }
 
 @media (mid-width: 375px) {
   .nosotras {
-    background-image: url(../images/nosotras.png);
+    background-image: url(../assets/images/nosotras.png);
     background-size: cover;
     background-position: center;
     height: 40vh;
 }
 main {
-  height: 45%;
+  height: 100%;
+}
+.h3, h3 {
+  font-size: calc(1.3rem + .2vw);
+}
+p {
+font-size: 0.5rem !important;
+}
+legend {
+  float: left;
+  width: 40%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size: calc(0.5rem + .1vw);
+  line-height: inherit;
 }
 footer {
   bottom: 0;
   }
 }
+
 @media(mid-width: 576px) {
   main {
-    height: 55%;
+    height: 100%;
   }
+  legend {
+    float: left;
+    width: 50%;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    font-size: calc(0.8rem + .2vw);
+    line-height: inherit;
+}
   footer {
+    position: fixed;
     bottom: 0;
   }
 }
 @media(mid-width: 768px) {
   .nosotras {
-    background-image: url(../images/nosotras.png);
+    background-image: url(../assets/images/nosotras.png);
     background-size: cover;
     background-position: center;
     height: 65vh;
 }
   main {
-    height: 70%;
+    height: 100%;
   }
+  iframe {
+    width: 70%;
+    height: 150px;
+  }
+
   footer {
+    position: fixed;
     bottom: 0;
   }
 }
+
+@media (max-width: 320px) {
+  .nosotras {
+    background-image: url(../assets/images/nosotras.png);
+    background-size: cover;
+    background-position: center;
+    height: 34vh;
+}
+}
+
 @media (max-width: 576px) {
   .nosotras {
-    background-image: url(../images/nosotras.png);
+    background-image: url(../assets/images/nosotras.png);
     background-size: cover;
     background-position: center;
     height: 50vh;
 }
+iframe {
+  width: 65%;
+  height: 135px;
+}
+main {
+  height: 100%;
+}
 footer {
+  position: fixed;
   bottom: 0;
   }
+}
+
+@media(max-width: 768px){
+  footer {
+    position: fixed;
+    bottom: 0;
+    clear: both;
+}
+.nosotras {
+  background-image: url(../assets/images/nosotras.png);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+}
+@media(max-width: 992px){
+  footer {
+    position: fixed;
+    bottom: 0;
+    clear: both;
+}
 }
